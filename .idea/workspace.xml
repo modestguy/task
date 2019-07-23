@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83df669b-3ba2-4b69-bb01-e280e5c50e9c" name="Default Changelist" comment="" />
+    <list default="true" id="83df669b-3ba2-4b69-bb01-e280e5c50e9c" name="Default Changelist" comment="g">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
         <counts>
           <entry key="babelrc" value="3" />
           <entry key="css" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="htaccess" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="35" />
@@ -44,7 +47,7 @@
           <entry key="JSX Harmony" value="1" />
           <entry key="JavaScript" value="35" />
           <entry key="PHP" value="70" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="2" />
           <entry key="htaccess" value="1" />
         </counts>
@@ -53,12 +56,12 @@
         <counts>
           <entry key="babelrc" value="2" />
           <entry key="css" value="111" />
-          <entry key="gitignore" value="14" />
+          <entry key="gitignore" value="21" />
           <entry key="html" value="26" />
           <entry key="js" value="7321" />
           <entry key="json" value="103" />
           <entry key="php" value="8478" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="5" />
           <entry key="yml" value="535" />
         </counts>
       </usages-collector>
@@ -69,7 +72,7 @@
           <entry key="JSON" value="105" />
           <entry key="JavaScript" value="7321" />
           <entry key="PHP" value="8478" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="PLAIN_TEXT" value="26" />
           <entry key="YAML" value="535" />
         </counts>
       </usages-collector>
@@ -167,8 +170,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="25">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -200,6 +203,9 @@
     <findStrings>
       <find>Good</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="dummy://restClient/response123.json" root0="SKIP_INSPECTION" />
@@ -318,6 +324,7 @@
     <option name="width" value="1850" />
     <option name="height" value="937" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -598,12 +605,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563808832252</updated>
       <workItem from="1563808833554" duration="10776000" />
-      <workItem from="1563861325879" duration="20520000" />
+      <workItem from="1563861325879" duration="21066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31296000" />
+    <option name="totallyTimeSpent" value="31842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="-8" width="1860" height="1089" extended-state="6" />
@@ -623,7 +630,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.6505895" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1032,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="25">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
