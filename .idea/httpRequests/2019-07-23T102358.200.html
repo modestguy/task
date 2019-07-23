@@ -1,0 +1,1167 @@
+<br/>
+<font size='1'>
+    <table class='xdebug-error xe-uncaught-exception' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5"><span
+                    style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Fatal error:
+                Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a
+                child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT
+                `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`)) in
+                /home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php on line <i>664</i></th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#f57900' colspan="5"><span
+                    style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span>
+                Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or
+                update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT
+                `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`)) (SQL: insert into
+                `good_order` (`good_id`, `order_id`) values (1, 1)) in
+                /home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php on line <i>664</i></th>
+        </tr>
+        <tr>
+            <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th>
+        </tr>
+        <tr>
+            <th align='center' bgcolor='#eeeeec'>#</th>
+            <th align='left' bgcolor='#eeeeec'>Time</th>
+            <th align='left' bgcolor='#eeeeec'>Memory</th>
+            <th align='left' bgcolor='#eeeeec'>Function</th>
+            <th align='left' bgcolor='#eeeeec'>Location</th>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>1</td>
+            <td bgcolor='#eeeeec' align='center'>0.0003</td>
+            <td bgcolor='#eeeeec' align='right'>358216</td>
+            <td bgcolor='#eeeeec'>{main}( )</td>
+            <td title='/home/mozilla/webprojects/vseins/public/index.php' bgcolor='#eeeeec'>.../index.php<b>:</b>0</td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>2</td>
+            <td bgcolor='#eeeeec' align='center'>0.0004</td>
+            <td bgcolor='#eeeeec' align='right'>358584</td>
+            <td bgcolor='#eeeeec'>require_once( <font color='#00bb00'>'/home/mozilla/webprojects/vseins/public/bootstrap.php'</font>
+                )
+            </td>
+            <td title='/home/mozilla/webprojects/vseins/public/index.php' bgcolor='#eeeeec'>.../index.php<b>:</b>2</td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>3</td>
+            <td bgcolor='#eeeeec' align='center'>0.0031</td>
+            <td bgcolor='#eeeeec' align='right'>630400</td>
+            <td bgcolor='#eeeeec'>require( <font
+                    color='#00bb00'>'/home/mozilla/webprojects/vseins/config/routes.php'</font> )
+            </td>
+            <td title='/home/mozilla/webprojects/vseins/public/bootstrap.php' bgcolor='#eeeeec'>
+                .../bootstrap.php<b>:</b>26
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>4</td>
+            <td bgcolor='#eeeeec' align='center'>0.0167</td>
+            <td bgcolor='#eeeeec' align='right'>839536</td>
+            <td bgcolor='#eeeeec'>App\Controller\Api\OrderController->create( )</td>
+            <td title='/home/mozilla/webprojects/vseins/config/routes.php' bgcolor='#eeeeec'>.../routes.php<b>:</b>31
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>5</td>
+            <td bgcolor='#eeeeec' align='center'>0.0745</td>
+            <td bgcolor='#eeeeec' align='right'>1381440</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Relations\BelongsToMany->sync( )</td>
+            <td title='/home/mozilla/webprojects/vseins/app/Controller/Api/OrderController.php' bgcolor='#eeeeec'>
+                .../OrderController.php<b>:</b>22
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>6</td>
+            <td bgcolor='#eeeeec' align='center'>0.0969</td>
+            <td bgcolor='#eeeeec' align='right'>1382544</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Relations\BelongsToMany->attachNew( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'
+                bgcolor='#eeeeec'>.../InteractsWithPivotTable.php<b>:</b>119
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>7</td>
+            <td bgcolor='#eeeeec' align='center'>0.0969</td>
+            <td bgcolor='#eeeeec' align='right'>1382544</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Relations\BelongsToMany->attach( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'
+                bgcolor='#eeeeec'>.../InteractsWithPivotTable.php<b>:</b>167
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>8</td>
+            <td bgcolor='#eeeeec' align='center'>0.0969</td>
+            <td bgcolor='#eeeeec' align='right'>1382544</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Relations\BelongsToMany->attachUsingCustomClass( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'
+                bgcolor='#eeeeec'>.../InteractsWithPivotTable.php<b>:</b>253
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>9</td>
+            <td bgcolor='#eeeeec' align='center'>0.0975</td>
+            <td bgcolor='#eeeeec' align='right'>1457360</td>
+            <td bgcolor='#eeeeec'>App\Model\OrderGoods->save( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'
+                bgcolor='#eeeeec'>.../InteractsWithPivotTable.php<b>:</b>282
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>10</td>
+            <td bgcolor='#eeeeec' align='center'>0.0975</td>
+            <td bgcolor='#eeeeec' align='right'>1458000</td>
+            <td bgcolor='#eeeeec'>App\Model\OrderGoods->performInsert( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'
+                bgcolor='#eeeeec'>.../Model.php<b>:</b>667
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>11</td>
+            <td bgcolor='#eeeeec' align='center'>0.0975</td>
+            <td bgcolor='#eeeeec' align='right'>1458000</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Builder->insert( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'
+                bgcolor='#eeeeec'>.../Model.php<b>:</b>815
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>12</td>
+            <td bgcolor='#eeeeec' align='center'>0.0975</td>
+            <td bgcolor='#eeeeec' align='right'>1458376</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Eloquent\Builder->__call( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'
+                bgcolor='#eeeeec'>.../Model.php<b>:</b>815
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>13</td>
+            <td bgcolor='#eeeeec' align='center'>0.0975</td>
+            <td bgcolor='#eeeeec' align='right'>1458416</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\Query\Builder->insert( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Builder.php'
+                bgcolor='#eeeeec'>.../Builder.php<b>:</b>1353
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>14</td>
+            <td bgcolor='#eeeeec' align='center'>0.0977</td>
+            <td bgcolor='#eeeeec' align='right'>1459664</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\MySqlConnection->insert( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Query/Builder.php' bgcolor='#eeeeec'>
+                .../Builder.php<b>:</b>2646
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>15</td>
+            <td bgcolor='#eeeeec' align='center'>0.0977</td>
+            <td bgcolor='#eeeeec' align='right'>1459664</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\MySqlConnection->statement( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php' bgcolor='#eeeeec'>
+                .../Connection.php<b>:</b>411
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>16</td>
+            <td bgcolor='#eeeeec' align='center'>0.0977</td>
+            <td bgcolor='#eeeeec' align='right'>1459984</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\MySqlConnection->run( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php' bgcolor='#eeeeec'>
+                .../Connection.php<b>:</b>459
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>17</td>
+            <td bgcolor='#eeeeec' align='center'>0.1784</td>
+            <td bgcolor='#eeeeec' align='right'>1579208</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\MySqlConnection->handleQueryException( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php' bgcolor='#eeeeec'>
+                .../Connection.php<b>:</b>627
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor='#eeeeec' align='center'>18</td>
+            <td bgcolor='#eeeeec' align='center'>0.1784</td>
+            <td bgcolor='#eeeeec' align='right'>1579208</td>
+            <td bgcolor='#eeeeec'>Illuminate\Database\MySqlConnection->tryAgainIfCausedByLostConnection( )</td>
+            <td title='/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php' bgcolor='#eeeeec'>
+                .../Connection.php<b>:</b>718
+            </td>
+        </tr>
+        <tr>
+            <th align='left' colspan='5' bgcolor='#e9b96e'>Variables in local scope (#18)</th>
+        </tr>
+        <tr>
+            <td colspan='2' align='right' bgcolor='#eeeeec' valign='top'>
+                <pre>$bindings&nbsp;=</pre>
+            </td>
+            <td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=2)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+</pre>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2' align='right' bgcolor='#eeeeec' valign='top'>
+                <pre>$callback&nbsp;=</pre>
+            </td>
+            <td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>Closure</i>)[<i>59</i>]
+  <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+    <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+      <i>protected</i> 'pdo' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>PDO</i>)[<i>56</i>]
+      <i>protected</i> 'readPdo' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>protected</i> 'database' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'vseins'</font> <i>(length=6)</i>
+      <i>protected</i> 'tablePrefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>''</font> <i>(length=0)</i>
+      <i>protected</i> 'config' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=7)</i>
+          'driver' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mysql'</font> <i>(length=5)</i>
+          'host' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'127.0.0.1'</font> <i>(length=9)</i>
+          'database' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'vseins'</font> <i>(length=6)</i>
+          'username' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'root'</font> <i>(length=4)</i>
+          'password' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'mozilla'</font> <i>(length=7)</i>
+          'prefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+          'name' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'default'</font> <i>(length=7)</i>
+      <i>protected</i> 'reconnector' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Closure</i>)[<i>7</i>]
+          <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+            <b>object</b>(<i>Illuminate\Database\DatabaseManager</i>)[<i>6</i>]
+              <i>protected</i> 'app' <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Illuminate\Container\Container</i>)[<i>2</i>]
+                  <i>protected</i> 'resolved' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'bindings' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'methodBindings' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'instances' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=1)</i>
+                      'config' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Support\Fluent</i>)[<i>4</i>]
+                          ...
+                  <i>protected</i> 'aliases' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'abstractAliases' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'extenders' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'tags' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'buildStack' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'with' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>public</i> 'contextual' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'reboundCallbacks' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'globalResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'globalAfterResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'resolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'afterResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+              <i>protected</i> 'factory' <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Illuminate\Database\Connectors\ConnectionFactory</i>)[<i>5</i>]
+                  <i>protected</i> 'container' <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Illuminate\Container\Container</i>)[<i>2</i>]
+                      <i>protected</i> 'resolved' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'bindings' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'methodBindings' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'instances' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=1)</i>
+                          ...
+                      <i>protected</i> 'aliases' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'abstractAliases' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'extenders' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'tags' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'buildStack' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'with' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>public</i> 'contextual' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'reboundCallbacks' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'globalResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'globalAfterResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'resolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'afterResolvingCallbacks' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+              <i>protected</i> 'connections' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  'default' <font color='#888a85'>=&gt;</font> 
+                    <i>&amp;</i><b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+              <i>protected</i> 'extensions' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+              <i>protected</i> 'reconnector' <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Closure</i>)[<i>7</i>]
+                  <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+                    <i>&amp;</i><b>object</b>(<i>Illuminate\Database\DatabaseManager</i>)[<i>6</i>]
+                  <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=1)</i>
+                      '$connection' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+          <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              '$connection' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+      <i>protected</i> 'queryGrammar' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Illuminate\Database\Query\Grammars\MySqlGrammar</i>)[<i>50</i>]
+          <i>protected</i> 'operators' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'sounds like'</font> <i>(length=11)</i>
+          <i>protected</i> 'selectComponents' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=11)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'aggregate'</font> <i>(length=9)</i>
+              1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'columns'</font> <i>(length=7)</i>
+              2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'from'</font> <i>(length=4)</i>
+              3 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'joins'</font> <i>(length=5)</i>
+              4 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'wheres'</font> <i>(length=6)</i>
+              5 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'groups'</font> <i>(length=6)</i>
+              6 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'havings'</font> <i>(length=7)</i>
+              7 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'orders'</font> <i>(length=6)</i>
+              8 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'limit'</font> <i>(length=5)</i>
+              9 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'offset'</font> <i>(length=6)</i>
+              10 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'lock'</font> <i>(length=4)</i>
+          <i>protected</i> 'tablePrefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+      <i>protected</i> 'schemaGrammar' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>protected</i> 'postProcessor' <font color='#888a85'>=&gt;</font> 
+        <b>object</b>(<i>Illuminate\Database\Query\Processors\MySqlProcessor</i>)[<i>51</i>]
+      <i>protected</i> 'events' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+      <i>protected</i> 'fetchMode' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>5</font>
+      <i>protected</i> 'transactions' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>0</font>
+      <i>protected</i> 'recordsModified' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>true</font>
+      <i>protected</i> 'queryLog' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=0)</i>
+          <i><font color='#888a85'>empty</font></i>
+      <i>protected</i> 'loggingQueries' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>protected</i> 'pretending' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      <i>protected</i> 'doctrineConnection' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+  <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=2)</i>
+      '$query' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+      '$bindings' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+</pre>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2' align='right' bgcolor='#eeeeec' valign='top'>
+                <pre>$e&nbsp;=</pre>
+            </td>
+            <td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<b>object</b>(<i>Illuminate\Database\QueryException</i>)[<i>60</i>]
+  <i>protected</i> 'sql' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+  <i>protected</i> 'bindings' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=2)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+  <i>protected</i> 'message' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`)) (SQL: insert into `good_order` (`good_id`, `order_id`) values (1, 1))'</font> <i>(length=303)</i>
+  <i>private</i> 'string' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>''</font> <i>(length=0)</i>
+  <i>protected</i> 'code' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'23000'</font> <i>(length=5)</i>
+  <i>protected</i> 'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+  <i>protected</i> 'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>664</font>
+  <i>private</i> 'trace' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=15)</i>
+      0 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>624</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'runQueryCallback'</font> <i>(length=16)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=3)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+              2 <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Closure</i>)[<i>59</i>]
+                  <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+                      <i>protected</i> 'pdo' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>PDO</i>)[<i>56</i>]
+                          ...
+                      <i>protected</i> 'readPdo' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'database' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'vseins'</font> <i>(length=6)</i>
+                      <i>protected</i> 'tablePrefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>''</font> <i>(length=0)</i>
+                      <i>protected</i> 'config' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=7)</i>
+                          ...
+                      <i>protected</i> 'reconnector' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Closure</i>)[<i>7</i>]
+                          ...
+                      <i>protected</i> 'queryGrammar' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Grammars\MySqlGrammar</i>)[<i>50</i>]
+                          ...
+                      <i>protected</i> 'schemaGrammar' <font color='#888a85'>=&gt;</font> <font
+                    color='#3465a4'>null</font>
+                      <i>protected</i> 'postProcessor' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Processors\MySqlProcessor</i>)[<i>51</i>]
+                          ...
+                      <i>protected</i> 'events' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'fetchMode' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>5</font>
+                      <i>protected</i> 'transactions' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>0</font>
+                      <i>protected</i> 'recordsModified' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>true</font>
+                      <i>protected</i> 'queryLog' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'loggingQueries' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'pretending' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'doctrineConnection' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                  <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      '$query' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+                      '$bindings' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+      1 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>459</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'run'</font> <i>(length=3)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=3)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+              2 <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Closure</i>)[<i>59</i>]
+                  <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+                      <i>protected</i> 'pdo' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>PDO</i>)[<i>56</i>]
+                          ...
+                      <i>protected</i> 'readPdo' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'database' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'vseins'</font> <i>(length=6)</i>
+                      <i>protected</i> 'tablePrefix' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>''</font> <i>(length=0)</i>
+                      <i>protected</i> 'config' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=7)</i>
+                          ...
+                      <i>protected</i> 'reconnector' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Closure</i>)[<i>7</i>]
+                          ...
+                      <i>protected</i> 'queryGrammar' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Grammars\MySqlGrammar</i>)[<i>50</i>]
+                          ...
+                      <i>protected</i> 'schemaGrammar' <font color='#888a85'>=&gt;</font> <font
+                    color='#3465a4'>null</font>
+                      <i>protected</i> 'postProcessor' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Processors\MySqlProcessor</i>)[<i>51</i>]
+                          ...
+                      <i>protected</i> 'events' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'fetchMode' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>5</font>
+                      <i>protected</i> 'transactions' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>0</font>
+                      <i>protected</i> 'recordsModified' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>true</font>
+                      <i>protected</i> 'queryLog' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'loggingQueries' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'pretending' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'doctrineConnection' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                  <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      '$query' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+                      '$bindings' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;required&gt;'</font> <i>(length=10)</i>
+      2 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>411</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'statement'</font> <i>(length=9)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      3 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Query/Builder.php'</font> <i>(length=77)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2646</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      4 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Builder.php'</font> <i>(length=80)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1353</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Query\Builder'</font> <i>(length=33)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      'good_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      'order_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      5 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'</font> <i>(length=78)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>815</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__call'</font> <i>(length=6)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Builder'</font> <i>(length=36)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      'good_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      'order_id' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+      6 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'</font> <i>(length=78)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>667</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'performInsert'</font> <i>(length=13)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Model'</font> <i>(length=34)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> 
+                <b>object</b>(<i>Illuminate\Database\Eloquent\Builder</i>)[<i>63</i>]
+                  <i>protected</i> 'query' <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Illuminate\Database\Query\Builder</i>)[<i>58</i>]
+                      <i>public</i> 'connection' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+                          ...
+                      <i>public</i> 'grammar' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Grammars\MySqlGrammar</i>)[<i>50</i>]
+                          ...
+                      <i>public</i> 'processor' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Processors\MySqlProcessor</i>)[<i>51</i>]
+                          ...
+                      <i>public</i> 'bindings' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=7)</i>
+                          ...
+                      <i>public</i> 'aggregate' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'columns' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'distinct' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>public</i> 'from' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'good_order'</font> <i>(length=10)</i>
+                      <i>public</i> 'joins' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'wheres' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>public</i> 'groups' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'havings' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'orders' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'limit' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'offset' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'unions' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'unionLimit' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'unionOffset' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'unionOrders' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'lock' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>public</i> 'operators' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=29)</i>
+                          ...
+                      <i>public</i> 'useWritePdo' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                  <i>protected</i> 'model' <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>App\Model\OrderGoods</i>)[<i>57</i>]
+                      <i>protected</i> 'table' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'good_order'</font> <i>(length=10)</i>
+                      <i>public</i> 'incrementing' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'guarded' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'connection' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'default'</font> <i>(length=7)</i>
+                      <i>protected</i> 'primaryKey' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'id'</font> <i>(length=2)</i>
+                      <i>protected</i> 'keyType' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'int'</font> <i>(length=3)</i>
+                      <i>protected</i> 'with' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'withCount' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'perPage' <font color='#888a85'>=&gt;</font> <small>int</small> <font
+                    color='#4e9a06'>15</font>
+                      <i>public</i> 'exists' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>public</i> 'wasRecentlyCreated' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'attributes' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+                      <i>protected</i> 'original' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+                      <i>protected</i> 'changes' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'casts' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'dates' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'dateFormat' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'appends' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'dispatchesEvents' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'observables' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'relations' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'touches' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>public</i> 'timestamps' <font color='#888a85'>=&gt;</font> <small>boolean</small> <font
+                    color='#75507b'>false</font>
+                      <i>protected</i> 'hidden' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'visible' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'fillable' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>public</i> 'pivotParent' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>App\Model\Order</i>)[<i>47</i>]
+                          ...
+                      <i>protected</i> 'foreignKey' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'order_id'</font> <i>(length=8)</i>
+                      <i>protected</i> 'relatedKey' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'good_id'</font> <i>(length=7)</i>
+                  <i>protected</i> 'eagerLoad' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'localMacros' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'onDelete' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                  <i>protected</i> 'passthru' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=15)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'insert'</font> <i>(length=6)</i>
+                      1 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'insertGetId'</font> <i>(length=11)</i>
+                      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'getBindings'</font> <i>(length=11)</i>
+                      3 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'toSql'</font> <i>(length=5)</i>
+                      4 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'dump'</font> <i>(length=4)</i>
+                      5 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'dd'</font> <i>(length=2)</i>
+                      6 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'exists'</font> <i>(length=6)</i>
+                      7 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'doesntExist'</font> <i>(length=11)</i>
+                      8 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'count'</font> <i>(length=5)</i>
+                      9 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'min'</font> <i>(length=3)</i>
+                      10 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'max'</font> <i>(length=3)</i>
+                      11 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'avg'</font> <i>(length=3)</i>
+                      12 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'average'</font> <i>(length=7)</i>
+                      13 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'sum'</font> <i>(length=3)</i>
+                      14 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'getConnection'</font> <i>(length=13)</i>
+                  <i>protected</i> 'scopes' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  <i>protected</i> 'removedScopes' <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+      7 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>282</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'save'</font> <i>(length=4)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Model'</font> <i>(length=34)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=0)</i>
+              <i><font color='#888a85'>empty</font></i>
+      8 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>253</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'attachUsingCustomClass'</font> <i>(length=22)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=2)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+      9 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>167</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'attach'</font> <i>(length=6)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=3)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+              2 <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      10 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>119</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'attachNew'</font> <i>(length=9)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=3)</i>
+              0 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  2 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  3 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+              1 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+              2 <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+      11 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/app/Controller/Api/OrderController.php'</font> <i>(length=71)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>22</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'sync'</font> <i>(length=4)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+                  2 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3</font>
+      12 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=6)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/config/routes.php'</font> <i>(length=50)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>31</font>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'create'</font> <i>(length=6)</i>
+          'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'App\Controller\Api\OrderController'</font> <i>(length=34)</i>
+          'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=0)</i>
+              <i><font color='#888a85'>empty</font></i>
+      13 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=4)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/bootstrap.php'</font> <i>(length=53)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>26</font>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/config/routes.php'</font> <i>(length=50)</i>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require'</font> <i>(length=7)</i>
+      14 <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=4)</i>
+          'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/index.php'</font> <i>(length=49)</i>
+          'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+          'args' <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=1)</i>
+              0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/bootstrap.php'</font> <i>(length=53)</i>
+          'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+  <i>private</i> 'previous' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> 
+    <b>object</b>(<i>PDOException</i>)[<i>61</i>]
+      <i>protected</i> 'message' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`))'</font> <i>(length=233)</i>
+      <i>private</i> 'string' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>''</font> <i>(length=0)</i>
+      <i>protected</i> 'code' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'23000'</font> <i>(length=5)</i>
+      <i>protected</i> 'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+      <i>protected</i> 'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>458</font>
+      <i>private</i> 'trace' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=17)</i>
+          0 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>458</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'execute'</font> <i>(length=7)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'PDOStatement'</font> <i>(length=12)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+          1 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>657</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\{closure}'</font> <i>(length=29)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          2 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>624</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'runQueryCallback'</font> <i>(length=16)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  2 <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Closure</i>)[<i>59</i>]
+                      <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+                          ...
+                      <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+          3 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>459</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'run'</font> <i>(length=3)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  2 <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Closure</i>)[<i>59</i>]
+                      <i>public</i> 'this' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\MySqlConnection</i>)[<i>49</i>]
+                          ...
+                      <i>public</i> 'parameter' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+          4 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php'</font> <i>(length=74)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>411</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'statement'</font> <i>(length=9)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          5 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Query/Builder.php'</font> <i>(length=77)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2646</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Connection'</font> <i>(length=30)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=2)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+          6 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Builder.php'</font> <i>(length=80)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1353</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Query\Builder'</font> <i>(length=33)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=1)</i>
+                      0 <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+          7 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'</font> <i>(length=78)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>815</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'__call'</font> <i>(length=6)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Builder'</font> <i>(length=36)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'insert'</font> <i>(length=6)</i>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=1)</i>
+                      0 <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=2)</i>
+                          ...
+          8 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Model.php'</font> <i>(length=78)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>667</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'performInsert'</font> <i>(length=13)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Model'</font> <i>(length=34)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>object</b>(<i>Illuminate\Database\Eloquent\Builder</i>)[<i>63</i>]
+                      <i>protected</i> 'query' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>Illuminate\Database\Query\Builder</i>)[<i>58</i>]
+                          ...
+                      <i>protected</i> 'model' <font color='#888a85'>=&gt;</font> 
+                        <b>object</b>(<i>App\Model\OrderGoods</i>)[<i>57</i>]
+                          ...
+                      <i>protected</i> 'eagerLoad' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'localMacros' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'onDelete' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+                      <i>protected</i> 'passthru' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=15)</i>
+                          ...
+                      <i>protected</i> 'scopes' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      <i>protected</i> 'removedScopes' <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+          9 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>282</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'save'</font> <i>(length=4)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Model'</font> <i>(length=34)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+          10 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>253</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'attachUsingCustomClass'</font> <i>(length=22)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=2)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+          11 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>167</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'attach'</font> <i>(length=6)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  2 <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+          12 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php'</font> <i>(length=115)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>119</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'attachNew'</font> <i>(length=9)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=3)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=3)</i>
+                      1 <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      2 <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                      3 <font color='#888a85'>=&gt;</font> 
+                        <b>array</b> <i>(size=0)</i>
+                          ...
+                  1 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=0)</i>
+                      <i><font color='#888a85'>empty</font></i>
+                  2 <font color='#888a85'>=&gt;</font> <small>boolean</small> <font color='#75507b'>false</font>
+          13 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/app/Controller/Api/OrderController.php'</font> <i>(length=71)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>22</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'sync'</font> <i>(length=4)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Illuminate\Database\Eloquent\Relations\BelongsToMany'</font> <i>(length=52)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> 
+                    <b>array</b> <i>(size=3)</i>
+                      0 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1</font>
+                      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+                      2 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>3</font>
+          14 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=6)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/config/routes.php'</font> <i>(length=50)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>31</font>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'create'</font> <i>(length=6)</i>
+              'class' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'App\Controller\Api\OrderController'</font> <i>(length=34)</i>
+              'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'-&gt;'</font> <i>(length=2)</i>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=0)</i>
+                  <i><font color='#888a85'>empty</font></i>
+          15 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=4)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/bootstrap.php'</font> <i>(length=53)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>26</font>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/config/routes.php'</font> <i>(length=50)</i>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'require'</font> <i>(length=7)</i>
+          16 <font color='#888a85'>=&gt;</font> 
+            <b>array</b> <i>(size=4)</i>
+              'file' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/index.php'</font> <i>(length=49)</i>
+              'line' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>2</font>
+              'args' <font color='#888a85'>=&gt;</font> 
+                <b>array</b> <i>(size=1)</i>
+                  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'/home/mozilla/webprojects/vseins/public/bootstrap.php'</font> <i>(length=53)</i>
+              'function' <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'require_once'</font> <i>(length=12)</i>
+      <i>private</i> 'previous' <small>(Exception)</small> <font color='#888a85'>=&gt;</font> <font
+                    color='#3465a4'>null</font>
+      <i>public</i> 'errorInfo' <font color='#888a85'>=&gt;</font> 
+        <b>array</b> <i>(size=3)</i>
+          0 <font color='#888a85'>=&gt;</font> <small>string</small> <font
+                    color='#cc0000'>'23000'</font> <i>(length=5)</i>
+          1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1452</font>
+          2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`))'</font> <i>(length=179)</i>
+      <i>public</i> 'xdebug_message' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;tr&gt;&lt;th align=&#39;left&#39; bgcolor=&#39;#f57900&#39; colspan=&quot;5&quot;&gt;&lt;span style=&#39;background-color: #cc0000; color: #fce94f; font-size: x-large;&#39;&gt;( ! )&lt;/span&gt; PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`)) in /home/mozilla/webprojects/vseins/vendor/illuminate/database/Connection.php on line &lt;i&gt;458&lt;/i&gt;&lt;/th&gt;&lt;/tr&gt;&#10;&lt;tr&gt;&lt;th align=&#39;l'...</font> <i>(length=9304)</i>
+  <i>public</i> 'errorInfo' <font color='#888a85'>=&gt;</font> 
+    <b>array</b> <i>(size=3)</i>
+      0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'23000'</font> <i>(length=5)</i>
+      1 <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1452</font>
+      2 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`))'</font> <i>(length=179)</i>
+  <i>public</i> 'xdebug_message' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'&lt;tr&gt;&lt;th align=&#39;left&#39; bgcolor=&#39;#f57900&#39; colspan=&quot;5&quot;&gt;&lt;span style=&#39;background-color: #cc0000; color: #fce94f; font-size: x-large;&#39;&gt;( ! )&lt;/span&gt; Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`vseins`.`good_order`, CONSTRAINT `good_order_good_id_foreign` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`)) (SQL: insert into `good_order` (`good_id`, `order_id`) values (1, 1)) in /home/mozilla/webprojects/vs'...</font> <i>(length=63928)</i>
+</pre>
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2' align='right' bgcolor='#eeeeec' valign='top'>
+                <pre>$query&nbsp;=</pre>
+            </td>
+            <td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'><small>string</small> <font
+                    color='#cc0000'>'insert into `good_order` (`good_id`, `order_id`) values (?, ?)'</font> <i>(length=62)</i>
+</pre>
+            </td>
+        </tr>
+    </table>
+</font>

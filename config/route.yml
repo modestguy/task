@@ -1,0 +1,28 @@
+index:
+  path: /
+  controller: App\Controller\IndexController::home
+  methods: GET
+
+goods:
+  path: /api/goods
+  controller: App\Controller\Api\GoodController::index
+  methods: GET
+
+fill:
+  path: /api/goods/fill
+  controller: App\Controller\Api\GoodController::fill
+  methods: POST
+
+createOrder:
+  path: /api/order/create
+  controller: App\Controller\Api\OrderController::create
+  methods: POST
+
+payOrder:
+  path: /api/order/pay
+  controller: App\Controller\Api\OrderController::pay
+  methods: POST
+
+migrate:
+  path: /migrate
+  controller: App\Controller\MigrateController::migrate

@@ -1,0 +1,618 @@
+App\Model\Good Object
+(
+[table:protected] => goods
+[fillable:protected] => Array
+(
+[0] => price
+[1] => name
+)
+
+[timestamps] =>
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[incrementing] => 1
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[id] => 1
+[name] => Dr.
+[price] => 6886
+)
+
+[original:protected] => Array
+(
+[id] => 1
+[name] => Dr.
+[price] => 6886
+[pivot_order_id] => 3
+[pivot_good_id] => 1
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+[pivot] => App\Model\OrderGoods Object
+(
+[table:protected] => good_order
+[incrementing] =>
+[guarded:protected] => Array
+(
+)
+
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[order_id] => 3
+[good_id] => 1
+)
+
+[original:protected] => Array
+(
+[order_id] => 3
+[good_id] => 1
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+)
+
+[touches:protected] => Array
+(
+)
+
+[timestamps] =>
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[fillable:protected] => Array
+(
+)
+
+[pivotParent] => App\Model\Order Object
+(
+[fillable:protected] => Array
+(
+[0] => order_type_id
+)
+
+[timestamps] =>
+[connection:protected] => default
+[table:protected] => orders
+[primaryKey:protected] => id
+[keyType:protected] => int
+[incrementing] => 1
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[id] => 3
+[order_type_id] => 1
+[sum] => 0
+)
+
+[original:protected] => Array
+(
+[id] => 3
+[order_type_id] => 1
+[sum] => 0
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+[goods] => Illuminate\Database\Eloquent\Collection Object
+(
+[items:protected] => Array
+(
+[0] => App\Model\Good Object
+*RECURSION*
+[1] => App\Model\Good Object
+(
+[table:protected] => goods
+[fillable:protected] => Array
+(
+[0] => price
+[1] => name
+)
+
+[timestamps] =>
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[incrementing] => 1
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[id] => 2
+[name] => Dr.
+[price] => 7668
+)
+
+[original:protected] => Array
+(
+[id] => 2
+[name] => Dr.
+[price] => 7668
+[pivot_order_id] => 3
+[pivot_good_id] => 2
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+[pivot] => App\Model\OrderGoods Object
+(
+[table:protected] => good_order
+[incrementing] =>
+[guarded:protected] => Array
+(
+)
+
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[order_id] => 3
+[good_id] => 2
+)
+
+[original:protected] => Array
+(
+[order_id] => 3
+[good_id] => 2
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+)
+
+[touches:protected] => Array
+(
+)
+
+[timestamps] =>
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[fillable:protected] => Array
+(
+)
+
+[pivotParent] => App\Model\Order Object
+*RECURSION*
+[foreignKey:protected] => order_id
+[relatedKey:protected] => good_id
+)
+
+)
+
+[touches:protected] => Array
+(
+)
+
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[guarded:protected] => Array
+(
+[0] => *
+)
+
+)
+
+[2] => App\Model\Good Object
+(
+[table:protected] => goods
+[fillable:protected] => Array
+(
+[0] => price
+[1] => name
+)
+
+[timestamps] =>
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[incrementing] => 1
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[id] => 3
+[name] => Dr.
+[price] => 9014
+)
+
+[original:protected] => Array
+(
+[id] => 3
+[name] => Dr.
+[price] => 9014
+[pivot_order_id] => 3
+[pivot_good_id] => 3
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+[pivot] => App\Model\OrderGoods Object
+(
+[table:protected] => good_order
+[incrementing] =>
+[guarded:protected] => Array
+(
+)
+
+[connection:protected] => default
+[primaryKey:protected] => id
+[keyType:protected] => int
+[with:protected] => Array
+(
+)
+
+[withCount:protected] => Array
+(
+)
+
+[perPage:protected] => 15
+[exists] => 1
+[wasRecentlyCreated] =>
+[attributes:protected] => Array
+(
+[order_id] => 3
+[good_id] => 3
+)
+
+[original:protected] => Array
+(
+[order_id] => 3
+[good_id] => 3
+)
+
+[changes:protected] => Array
+(
+)
+
+[casts:protected] => Array
+(
+)
+
+[dates:protected] => Array
+(
+)
+
+[dateFormat:protected] =>
+[appends:protected] => Array
+(
+)
+
+[dispatchesEvents:protected] => Array
+(
+)
+
+[observables:protected] => Array
+(
+)
+
+[relations:protected] => Array
+(
+)
+
+[touches:protected] => Array
+(
+)
+
+[timestamps] =>
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[fillable:protected] => Array
+(
+)
+
+[pivotParent] => App\Model\Order Object
+*RECURSION*
+[foreignKey:protected] => order_id
+[relatedKey:protected] => good_id
+)
+
+)
+
+[touches:protected] => Array
+(
+)
+
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[guarded:protected] => Array
+(
+[0] => *
+)
+
+)
+
+)
+
+)
+
+)
+
+[touches:protected] => Array
+(
+)
+
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[guarded:protected] => Array
+(
+[0] => *
+)
+
+)
+
+[foreignKey:protected] => order_id
+[relatedKey:protected] => good_id
+)
+
+)
+
+[touches:protected] => Array
+(
+)
+
+[hidden:protected] => Array
+(
+)
+
+[visible:protected] => Array
+(
+)
+
+[guarded:protected] => Array
+(
+[0] => *
+)
+
+)
